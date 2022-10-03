@@ -11,6 +11,10 @@ export interface Contract {
 
 const ContractSchema = new Schema(
   {
+    address: {
+      required: true,
+      type: String,
+  },
     code_id: {
         required: true,
         type: Number,
